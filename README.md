@@ -55,7 +55,7 @@ npm run dev
 ### Requisitos funcionais
 
 - :ballot_box_with_check: Deve ser possível se cadastrar
-- :white_large_square: Deve ser possível se autenticar
+- :ballot_box_with_check: Deve ser possível se autenticar
 - :white_large_square: Deve ser possível obter o perfil de um usuário logado
 - :white_large_square: Deve ser possível obter o número de check-ins realizados pelo usuário logado
 - :white_large_square: Deve ser possível o usúario obter o seu histórico de check-ins
