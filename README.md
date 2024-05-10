@@ -54,32 +54,32 @@ npm run dev
 
 ### Requisitos funcionais
 
-:white_large_square: Deve ser possível se cadastrar
-:white_large_square: Deve ser possível se autenticar
-:white_large_square: Deve ser possível obter o perfil de um usuário logado
-:white_large_square: Deve ser possível obter o número de check-ins realizados pelo usuário logado
-:white_large_square: Deve ser possível o usúario obter o seu histórico de check-ins
-:white_large_square: Deve ser possível o usuário buscar academias próximas (até 10km)
-:white_large_square: Deve ser possível o usuário buscar academias pelo nome
-:white_large_square: Deve ser possível o usuário realizar o check-in em uma academia
-:white_large_square: Deve ser possível validar o check-in de um usuário
-:white_large_square: Deve ser possível cadastrar uma academia
+- :ballot_box_with_check: Deve ser possível se cadastrar
+- :white_large_square: Deve ser possível se autenticar
+- :white_large_square: Deve ser possível obter o perfil de um usuário logado
+- :white_large_square: Deve ser possível obter o número de check-ins realizados pelo usuário logado
+- :white_large_square: Deve ser possível o usúario obter o seu histórico de check-ins
+- :white_large_square: Deve ser possível o usuário buscar academias próximas (até 10km)
+- :white_large_square: Deve ser possível o usuário buscar academias pelo nome
+- :white_large_square: Deve ser possível o usuário realizar o check-in em uma academia
+- :white_large_square: Deve ser possível validar o check-in de um usuário
+- :white_large_square: Deve ser possível cadastrar uma academia
 
 ### Regras de negócio
 
-:white_large_square: O usuário não deve se cadastar com um e-mail duplicado
-:white_large_square: O usuário não pode fazer 2 check-ins no mesmo dia
-:white_large_square: O usuário não pode fazer check-in se não estiver perto (100m) da academia
-:white_large_square: O check-in só pode ser validado até 20 minutos após ser criado
-:white_large_square: O check-in só poder validado por administradores
-:white_large_square: A academia só pode ser cadastrada por administradores
+- :ballot_box_with_check: O usuário não deve se cadastar com um e-mail duplicado
+- :white_large_square: O usuário não pode fazer 2 check-ins no mesmo dia
+- :white_large_square: O usuário não pode fazer check-in se não estiver perto (100m) da academia
+- :white_large_square: O check-in só pode ser validado até 20 minutos após ser criado
+- :white_large_square: O check-in só poder validado por administradores
+- :white_large_square: A academia só pode ser cadastrada por administradores
 
 ### Requisitos não funcionais
 
-:white_large_square: A senha do usuário precisa estar criptografada
-:white_large_square: Os dados da aplicação precisam estar persistidos em um branco PostgreSQL
-:white_large_square: Todas as listas de dadaos precisam estar paginadas com 20 itens por página
-:white_large_square: O usuário deve ser identificado por um JWT (JSON Web Token)
+- :ballot_box_with_check: A senha do usuário precisa estar criptografada
+- :ballot_box_with_check: Os dados da aplicação precisam estar persistidos em um branco PostgreSQL
+- :white_large_square: Todas as listas de dadaos precisam estar paginadas com 20 itens por página
+- :white_large_square: O usuário deve ser identificado por um JWT (JSON Web Token)
 
 ## :computer: Tecnologias utilizadas
 
