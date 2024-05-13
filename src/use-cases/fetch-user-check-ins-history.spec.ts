@@ -16,15 +16,6 @@ describe("Fetch user check-ins history use case", () => {
     fetchUserCheckInsHistoryUseCase = new FetchUserCheckInsHistoryUseCase(
       checkInsRepository,
     )
-
-    // await gymsRepository.create({
-    //   id: "gym-1",
-    //   title: "Gym 1",
-    //   latitude: -27.2092052,
-    //   longitude: -49.6401091,
-    //   phone: null,
-    //   description: null,
-    // })
   })
 
   it("should be able to fetch check-ins history", async () => {
