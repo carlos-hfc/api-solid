@@ -58,7 +58,7 @@ npm run dev
 - :ballot_box_with_check: Deve ser possível se autenticar
 - :ballot_box_with_check: Deve ser possível obter o perfil de um usuário logado
 - :white_large_square: Deve ser possível obter o número de check-ins realizados pelo usuário logado
-- :white_large_square: Deve ser possível o usúario obter o seu histórico de check-ins
+- :ballot_box_with_check: Deve ser possível o usúario obter o seu histórico de check-ins
 - :white_large_square: Deve ser possível o usuário buscar academias próximas (até 10km)
 - :white_large_square: Deve ser possível o usuário buscar academias pelo nome
 - :ballot_box_with_check: Deve ser possível o usuário realizar o check-in em uma academia
@@ -78,7 +78,7 @@ npm run dev
 
 - :ballot_box_with_check: A senha do usuário precisa estar criptografada
 - :ballot_box_with_check: Os dados da aplicação precisam estar persistidos em um branco PostgreSQL
-- :white_large_square: Todas as listas de dadaos precisam estar paginadas com 20 itens por página
+- :ballot_box_with_check: Todas as listas de dadaos precisam estar paginadas com 20 itens por página
 - :white_large_square: O usuário deve ser identificado por um JWT (JSON Web Token)
 
 ## :computer: Tecnologias utilizadas
