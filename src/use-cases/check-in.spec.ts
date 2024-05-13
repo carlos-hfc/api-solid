@@ -88,7 +88,7 @@ describe("Authenticate use case", () => {
   })
 
   it("should not be able to check in on distant gym", async () => {
-    gymsRepository.items.push({
+    await gymsRepository.create({
       id: "gym-2",
       title: "Gym 2",
       latitude: new Decimal(-27.0747279),

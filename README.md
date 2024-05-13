@@ -59,7 +59,7 @@ npm run dev
 - :ballot_box_with_check: Deve ser possível obter o perfil de um usuário logado
 - :ballot_box_with_check: Deve ser possível obter o número de check-ins realizados pelo usuário logado
 - :ballot_box_with_check: Deve ser possível o usúario obter o seu histórico de check-ins
-- :white_large_square: Deve ser possível o usuário buscar academias próximas (até 10km)
+- :ballot_box_with_check: Deve ser possível o usuário buscar academias próximas (até 10km)
 - :ballot_box_with_check: Deve ser possível o usuário buscar academias pelo nome
 - :ballot_box_with_check: Deve ser possível o usuário realizar o check-in em uma academia
 - :white_large_square: Deve ser possível validar o check-in de um usuário

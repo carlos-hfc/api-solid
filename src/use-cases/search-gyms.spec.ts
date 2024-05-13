@@ -5,12 +5,12 @@ import { InMemoryGymsRepository } from "@/repositories/in-memory/in-memory-gyms-
 import { SearchGymsUseCase } from "./search-gyms"
 
 let gymsRepository: InMemoryGymsRepository
-let createGymUseCase: SearchGymsUseCase
+let searchGymsUseCase: SearchGymsUseCase
 
 describe("Seach gyms use case", () => {
   beforeEach(() => {
     gymsRepository = new InMemoryGymsRepository()
-    createGymUseCase = new SearchGymsUseCase(gymsRepository)
+    searchGymsUseCase = new SearchGymsUseCase(gymsRepository)
   })
 
   it("should be able to search for gyms", async () => {
@@ -29,7 +29,7 @@ describe("Seach gyms use case", () => {
       description: null,
     })
 
-    const { gyms } = await createGymUseCase.execute({
+    const { gyms } = await searchGymsUseCase.execute({
       query: "Javascript",
       page: 1,
     })
@@ -49,7 +49,7 @@ describe("Seach gyms use case", () => {
       })
     }
 
-    const { gyms } = await createGymUseCase.execute({
+    const { gyms } = await searchGymsUseCase.execute({
       query: "Javascript",
       page: 2,
     })
