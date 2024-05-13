@@ -72,8 +72,8 @@ npm run dev
 - :ballot_box_with_check: O usuário não pode fazer 2 check-ins no mesmo dia
 - :ballot_box_with_check: O usuário não pode fazer check-in se não estiver perto (100m) da academia
 - :ballot_box_with_check: O check-in só pode ser validado até 20 minutos após ser criado
-- :white_large_square: O check-in só pode ser validado por administradores
-- :white_large_square: A academia só pode ser cadastrada por administradores
+- :ballot_box_with_check: O check-in só pode ser validado por administradores
+- :ballot_box_with_check: A academia só pode ser cadastrada por administradores
 
 ### Requisitos não funcionais
 
