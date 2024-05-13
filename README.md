@@ -62,7 +62,7 @@ npm run dev
 - :ballot_box_with_check: Deve ser possível o usuário buscar academias próximas (até 10km)
 - :ballot_box_with_check: Deve ser possível o usuário buscar academias pelo nome
 - :ballot_box_with_check: Deve ser possível o usuário realizar o check-in em uma academia
-- :white_large_square: Deve ser possível validar o check-in de um usuário
+- :ballot_box_with_check: Deve ser possível validar o check-in de um usuário
 - :ballot_box_with_check: Deve ser possível cadastrar uma academia
 
 ### Regras de negócio
@@ -70,8 +70,8 @@ npm run dev
 - :ballot_box_with_check: O usuário não deve se cadastar com um e-mail duplicado
 - :ballot_box_with_check: O usuário não pode fazer 2 check-ins no mesmo dia
 - :ballot_box_with_check: O usuário não pode fazer check-in se não estiver perto (100m) da academia
-- :white_large_square: O check-in só pode ser validado até 20 minutos após ser criado
-- :white_large_square: O check-in só poder validado por administradores
+- :ballot_box_with_check: O check-in só pode ser validado até 20 minutos após ser criado
+- :white_large_square: O check-in só pode ser validado por administradores
 - :white_large_square: A academia só pode ser cadastrada por administradores
 
 ### Requisitos não funcionais
