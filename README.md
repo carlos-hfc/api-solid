@@ -63,7 +63,7 @@ npm run dev
 - :white_large_square: Deve ser possível o usuário buscar academias pelo nome
 - :ballot_box_with_check: Deve ser possível o usuário realizar o check-in em uma academia
 - :white_large_square: Deve ser possível validar o check-in de um usuário
-- :white_large_square: Deve ser possível cadastrar uma academia
+- :ballot_box_with_check: Deve ser possível cadastrar uma academia
 
 ### Regras de negócio
 
