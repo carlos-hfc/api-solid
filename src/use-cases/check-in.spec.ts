@@ -5,24 +5,26 @@ import { InMemoryCheckInsRepository } from "@/repositories/in-memory/in-memory-c
 import { InMemoryGymsRepository } from "@/repositories/in-memory/in-memory-gyms-repository"
 
 import { CheckInUseCase } from "./check-in"
+import { MaxDistance } from "./errors/max-distance"
+import { MaxNumberOfCheckIns } from "./errors/max-number-of-check-ins"
 
 let checkInsRepository: InMemoryCheckInsRepository
 let gymsRepository: InMemoryGymsRepository
 let checkInUseCase: CheckInUseCase
 
 describe("Authenticate use case", () => {
-  beforeEach(() => {
+  beforeEach(async () => {
     checkInsRepository = new InMemoryCheckInsRepository()
     gymsRepository = new InMemoryGymsRepository()
     checkInUseCase = new CheckInUseCase(checkInsRepository, gymsRepository)
 
-    gymsRepository.items.push({
+    await gymsRepository.create({
       id: "gym-1",
       title: "Gym 1",
-      latitude: new Decimal(-27.2092052),
-      longitude: new Decimal(-49.6401091),
-      phone: "",
-      description: "",
+      latitude: -27.2092052,
+      longitude: -49.6401091,
+      phone: null,
+      description: null,
     })
 
     vi.useFakeTimers()
@@ -60,7 +62,7 @@ describe("Authenticate use case", () => {
         userLatitude: -27.2092052,
         userLongitude: -49.6401091,
       }),
-    ).rejects.toBeInstanceOf(Error)
+    ).rejects.toBeInstanceOf(MaxNumberOfCheckIns)
   })
 
   it("should not be able to check in twice, but in different days", async () => {
@@ -102,6 +104,6 @@ describe("Authenticate use case", () => {
         userLatitude: -27.2092052,
         userLongitude: -49.6401091,
       }),
-    ).rejects.toBeInstanceOf(Error)
+    ).rejects.toBeInstanceOf(MaxDistance)
   })
 })
