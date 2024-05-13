@@ -42,6 +42,7 @@ npm install
 ```env
 NODE_ENV=""
 DATABASE_URL=""
+JWT_SECRET=""
 ```
 
 5. Rode a aplicação
