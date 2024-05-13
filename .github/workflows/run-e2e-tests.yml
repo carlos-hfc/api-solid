@@ -12,7 +12,7 @@ jobs:
         image: mysql
         ports:
           - 3306:3306
-        environment:
+        env:
           - MYSQL_USER: docker
           - MYSQL_PASSWORD: docker
           - MYSQL_ROOT_PASSWORD: docker
