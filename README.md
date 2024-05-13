@@ -80,7 +80,7 @@ npm run dev
 - :ballot_box_with_check: A senha do usuário precisa estar criptografada
 - :ballot_box_with_check: Os dados da aplicação precisam estar persistidos em um branco PostgreSQL
 - :ballot_box_with_check: Todas as listas de dadaos precisam estar paginadas com 20 itens por página
-- :white_large_square: O usuário deve ser identificado por um JWT (JSON Web Token)
+- :ballot_box_with_check: O usuário deve ser identificado por um JWT (JSON Web Token)
 
 ## :computer: Tecnologias utilizadas
 
